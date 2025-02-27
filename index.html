@@ -34,5 +34,11 @@
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
+  <script>
+    var path = window.location.pathname;
+    if (path !== "/" && !path.endsWith(".html")) {
+      window.location.href = "/";
+    }
+  </script>
 </body>
 </html>
